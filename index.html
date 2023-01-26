@@ -1,13 +1,51 @@
+<!-- se le indica al navegador que el programa que esta leyendo es un archivo de html version 5  -->
 <!DOCTYPE html>
+<!-- se le indica al navegador que la pagina esta en español -->
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Encriptador Online</title>
-</head>
-<body>
-    
-</body>
+    <!-- se le indica al navegador la informacion que necesita en el head -->
+    <head>
+        <!-- se le indica al navegador el diccionario que se va a usar, en este caso UFT-8 -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- se le indica al programa donde estan las hojas de estilo (reset.css y style.css) -->
+        <!-- se agrega el archivo reset.css para que las configuraciones por defecto del navegador no afecten en los estilos -->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- se indica el titulo del programa que se debe mostrar en la ventana al abrir el archivo -->
+        <title>Encriptador Online</title>
+    </head>
+    <!-- se indica la estructura del programa en el body -->
+    <body>
+        <!-- en el header se agrega el logo de Alura -->
+        <header>
+            <img class="logo" src="images/Logo.png" alt="Logo Alura">
+        </header>
+        <!-- en el main se hace la estructura del programa en si, botones, texto entre otras cosas -->
+        <main>
+            <!-- se crea una seccion para los apartados a la izquierda de la pantalla -->
+            <section>
+                <!-- este textarea es el lugar donde el usuario ingresara el codigo -->
+                <textarea class="entradaDatos" cols="30" rows="10"></textarea>
+                <!-- este es el parrafo en el que se le indicara al usuario que no se permiten letras en mayuscula, acentos ni caracteres especiales -->
+                <p class="informacionUsuario" >&#128712; Solo letras minúsculas, no se pueden ingresar acentos ni caracteres especiales</p>
+                <!-- este es el div que contendra a los dos botones para encriptar y desencriptar -->
+                <div class="botonesEncripDesenCrip" >
+                    <!-- boton para encriptar -->
+                    <button class="encriptar" >Encriptar</button>
+                    <!-- boton para desencriptar -->
+                    <button class="desencriptar" >Desencriptar</button>
+                </div>
+            </section>
+            <!-- se crea una seccion para los apartados a la derecha de la pantalla -->
+            <section>
+                <!-- este textarea es el lugar donde se muestra el codigo luego de ser encriptado por el programa -->
+                <textarea class="salidaDatos" cols="30" rows="10"></textarea>
+                <!-- este boton es un agregado para que el usuario pueda copiar el codigo luego de haber sido encriptado -->
+                <button class="copiar" >Copiar</button>
+            </section>
+        </main>
+    </body>
+    <!-- se le indica al programa donde se encuentra el archivo con el script (script.js) -->
+    <script src="script.js"></script>
 </html>
