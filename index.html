@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- se le indica al programa donde estan las hojas de estilo (reset.css y style.css) -->
         <!-- se agrega el archivo reset.css para que las configuraciones por defecto del navegador no afecten en los estilos -->
-        <link rel="stylesheet" href="reset.css">
+
         <link rel="stylesheet" href="style.css">
         <!-- agregando una fuente perzonalizada al documento -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,17 +36,17 @@
                 <!-- este es el div que contendra a los dos botones para encriptar y desencriptar -->
                 <div class="botonesEncripDesenCrip" >
                     <!-- boton para encriptar -->
-                    <button class="encriptar" >Encriptar</button>
+                    <button class="encriptar" onclick="encriptar()">Encriptar</button>
                     <!-- boton para desencriptar -->
-                    <button class="desencriptar" >Desencriptar</button>
+                    <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
                 </div>
             </section>
             <!-- se crea una seccion para los apartados a la derecha de la pantalla -->
-            <section>
+            <section class="cuadroSalida">
                 <!-- este textarea es el lugar donde se muestra el codigo luego de ser encriptado por el programa -->
                 <textarea class="salidaDatos" cols="30" rows="10"></textarea>
                 <!-- este boton es un agregado para que el usuario pueda copiar el codigo luego de haber sido encriptado -->
-                <button class="copiar" >Copiar</button>
+                <button class="copiar" onclick="copiar()">Copiar</button>
             </section>
         </main>
     </body>

@@ -41,7 +41,7 @@ section{
     margin: 15px;
 }
 
-section:last-child{
+.cuadroSalida{
     margin-left: 100px;
     border-radius: 32px;
     background: white;
@@ -93,7 +93,7 @@ section:last-child{
     height: 650px;
     margin: 25px;
     background: none;
-    background-image: url(images/Frame\ 5.png);
+    background-image: url(images/Frame5.png);
     background-repeat: no-repeat;
     background-position: bottom;
 }
